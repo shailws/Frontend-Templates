@@ -1,0 +1,245 @@
+:root {
+  --sideBGColor: #040b14;
+  --themecolor: #00a78e;
+  --iconBGColor: #2c2f3f;
+  --textColor: #353535;
+  --bgColor: #f7f7f7;
+  --smooth: #fffbf5;
+  --green: #41b3a2;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* /////////////////////////////////Home Section Start////////////////////////////////////////////// */
+.home {
+  background-image: url("/images/background/slide3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100dvh; /* Better for mobile viewports */
+  margin-top: 65px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(21, 0, 255, 0.075);
+  z-index: 0;
+}
+.home .sum_home {
+  width: 280px;
+  z-index: 1;
+}
+.home .sum_home h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--themecolor);
+}
+.home .sum_home h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--themecolor);
+}
+.home .sum_home p {
+  font-size: 18px;
+  color: white;
+}
+
+/* Tablet View */
+@media (min-width: 768px) {
+  .home .sum_home {
+    width: 600px;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 992px) {
+  .home {
+    height: 100vh;
+  }
+  .home .sum_home {
+    width: 1000px;
+  }
+  .home .sum_home h3 {
+    font-size: 45px;
+    font-weight: 800;
+  }
+  .home .sum_home h1 {
+    font-size: 80px;
+    font-weight: 700;
+  }
+  .home .sum_home p {
+    font-size: 28px;
+    color: white;
+  }
+  .home .sum_home button {
+    font-size: 28px;
+  }
+}
+/* /////////////////////////////////Home Section End////////////////////////////////////////////// */
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* /////////////////////////////////Abour Section Start////////////////////////////////////////////// */
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.point {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.about_row {
+  padding: 20px 0;
+}
+
+.goods_row i {
+  transition: transform 0.3s;
+}
+.goods_row i:hover {
+  transform: scale(1.2);
+}
+
+/* /////////////////////////////////About Section End/////////////////////////////////////////////// */
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* /////////////////////////////////Service Section Start/////////////////////////////////////////////// */
+
+.services {
+  padding: 70px 15px;
+  text-align: center;
+}
+.services p {
+  color: var(--iconBGColor);
+  font-size: 17px;
+  line-height: 33px;
+}
+.service_row {
+  margin-top: 60px;
+}
+@media (min-width: 992px) {
+  .service_row .img_cake {
+    width: 30%;
+  }
+  .service_row .txt_cake {
+    width: 60%;
+  }
+}
+/* //////////////////////////// */
+.items_row {
+  margin-top: 80px;
+}
+.items_row .item1 .round {
+  border: 3px solid brown;
+}
+
+/* /////////////////////////////////Service Section End/////////////////////////////////////////////// */
+
+/* --------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* /////////////////////////////////Blogs Section Start/////////////////////////////////////////////// */
+.blogs {
+  background-color: var(--smooth);
+  padding: 70px 15px;
+  text-align: center;
+}
+.blogs .blog_row {
+  margin-top: 50px;
+}
+.blogs .blog_row .img11 img {
+  height: 170px;
+  width: 300px;
+  border-radius: 7px;
+  border: 3px solid brown;
+}
+.blogs .blog_row p {
+  color: var(--textColor);
+  font-size: 17px;
+  margin-top: 15px;
+}
+/* ////////////////////// */
+
+.gallery {
+  margin-top: 50px;
+}
+.gallery .galy {
+  height: 300px;
+  border-radius: 35px;
+  /* box-shadow: 2px 2px 10px gray; */
+}
+.gallery .galy:hover {
+  border: 6px solid skyblue;
+}
+/* /////////////////////////////////Blogs Section End/////////////////////////////////////////////// */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* /////////////////////////////////Contact Section Start/////////////////////////////////////////////// */
+
+.contact {
+  padding: 70px 15px 0px 15px;
+  background-color: var(--smooth);
+  text-align: center;
+}
+.contact p {
+  color: var(--textColor);
+  font-size: 17px;
+}
+.contact .icons i {
+  color: brown;
+}
+.contact .icons span {
+  font-size: 17px;
+  color: var(--iconBGColor);
+}
+form textarea {
+  height: 100px;
+}
+@media (min-width: 992px) {
+  .contact_row .one {
+    width: 50%;
+  }
+  .contact_row .two {
+    width: 40%;
+  }
+}
+
+/* /////////////////// */
+.footer {
+  background-color: var(--themecolor);
+  padding-bottom: 60px;
+}
+.footer .icon_row {
+  width: 300px;
+}
+.footer .icon_row i {
+  font-size: 38px;
+}
+.footer .icon_row i:hover {
+  color: var(--smooth);
+}
+@media (min-width: 992px) {
+  .footer .info1 {
+    width: 45%;
+  }
+  .footer .info2 {
+    width: 45%;
+  }
+}
+
+/* /////////////////////////////////Contact Section End/////////////////////////////////////////////// */

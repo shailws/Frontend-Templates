@@ -1,0 +1,156 @@
+/* --- START CSS --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #5f41e4;
+  padding: 15px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 425px;
+  width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.search-section {
+  display: flex;
+  padding: 25px;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-wrapper {
+  height: 54px;
+  width: 100%;
+  position: relative;
+}
+
+.input-wrapper span {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.search-input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0 20px 0 50px;
+  border-radius: 6px;
+  border: 1px solid #beb0ff;
+}
+
+.search-input::placeholder {
+  text-transform: none;
+}
+
+.search-input:focus {
+  border-color: #5f41e4;
+}
+
+.location-button {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  outline: none;
+  cursor: pointer;
+  color: #5f41e4;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #beb0ff;
+  transition: 0.1s ease;
+}
+
+.location-button:hover {
+  color: #fff;
+  background: #5f41e4;
+  border-color: #5f41e4;
+}
+
+.location-button span {
+  font-size: 1.3rem;
+}
+
+.no-results {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body.show-no-results .no-results {
+  display: flex;
+}
+
+.no-results .title {
+  margin: 25px 0 15px;
+}
+
+.no-results .message {
+  font-weight: 500;
+}
+
+body.show-no-results .weather-section {
+  visibility: hidden;
+}
+
+.weather-section .current-weather {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 50px;
+  flex-direction: column;
+}
+
+.current-weather .weather-icon {
+  width: 140px;
+  aspect-ratio: 1;
+}
+
+.current-weather .temperature {
+  font-size: 3.38rem;
+  margin: 23px 0;
+  display: flex;
+}
+
+.current-weather .temperature span {
+  font-size: 1.56rem;
+  font-weight: 500;
+  margin: 5px 0 0 2px;
+}
+
+.current-weather .description {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+@media (max-width: 624px) {
+  .search-section {
+    padding: 20px;
+  }
+}
+/* --- END CSS --- */

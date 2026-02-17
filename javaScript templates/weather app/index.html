@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather app</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-section">
+        <div class="input-wrapper">
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input
+            type="text"
+            placeholder="Enter city name"
+            class="search-input"
+          />
+        </div>
+        <button class="location-button">
+          <span><i class="fa-solid fa-location-crosshairs"></i></span>
+        </button>
+      </div>
+
+      <div class="weather-section">
+        <div class="current-weather">
+          <img src="" alt="Weather icon" class="weather-icon" />
+          <p class="temperature">--<span>°C</span></p>
+          <p class="description">--</p>
+        </div>
+      </div>
+
+      <div class="no-results">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/10779/10779354.png"
+          width="100"
+        />
+        <h2 class="title">Oops! City Not Found</h2>
+        <p class="message">Please enter a valid location name.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
